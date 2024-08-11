@@ -15,6 +15,7 @@ const App = () => {
       <PopularAreas/>
       <Properties/>
       <Footer/>
+      <PopularAreas/>
     </DarkModeProvider>
   )
 }

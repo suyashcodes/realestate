@@ -28,7 +28,7 @@ const PopularAreas = () => {
         </div>
 
 
-        <div className='grid lg:grid-cols-3 grid-cols-2 col-span-2 justify-center items-center gap-6'>
+        <div className='grid lg:grid-cols-3 grid-cols-1 lg:col-span-2 justify-center items-center gap-6'>
         <div data-aos="zoom-in" data-aos-delay="400" style={{backgroundImage : `url(${area1})`}} className='h-[400px] bg-cover bg-center rounded-xl'>
 
         </div>
