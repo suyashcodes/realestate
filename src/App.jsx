@@ -8,9 +8,11 @@ import PopularAreas from './sections/PopularAreas'
 import Properties from './sections/Properties'
 import Services from './sections/Services'
 import CLients from './sections/CLients'
+import Contact from './sections/Contact'
 const App = () => {
   return (
     <DarkModeProvider>
+
       <Header/>
       <Hero/>
       <About/>
@@ -18,8 +20,8 @@ const App = () => {
       <Properties/>
       <Services/>
       <CLients/>
+      <Contact/>
       <Footer/>
-      <PopularAreas/>
     </DarkModeProvider>
   )
 }
