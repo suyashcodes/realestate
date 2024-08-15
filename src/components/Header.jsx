@@ -75,7 +75,7 @@ const Header = () => {
               <ul className='flex flex-col gap-2 w-full justify-center items-center'>
                 {
                   navItem.map(({link,path})=>(
-                    <Link key={path} className='text-white uppercase font-semibold p-3 rounded-lg hover:bg-red-600 hover:text-black w-full cursor-pointer text-center' to={path} spy={true} offset={500} smooth={true} onClick={closeMenu}>
+                    <Link key={path} className='text-white uppercase font-semibold p-3 rounded-lg hover:bg-red-600 hover:text-black w-full cursor-pointer text-center' to={path} spy={true} offset={-100} smooth={true} onClick={closeMenu}>
                       {link}
                     </Link>
                   ))
