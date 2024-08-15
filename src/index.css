@@ -9,3 +9,7 @@
 body{
     background-color: rgb(243, 243, 243);
 }
+
+.dark body{
+    background-color: black;
+}

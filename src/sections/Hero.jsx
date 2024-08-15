@@ -14,11 +14,11 @@ const Hero = () => {
   }, []);
   const { darkMode, toggleDarkMode } = useDarkMode();
   return (
-    <>
-      <div className={`${darkMode ? "dark bg-black" : "light bg-white"}`}>
+    <div className={`${darkMode ? "dark bg-black" : "light bg-transparent"} w-full m-0 py-4`}>
+      <div className={`${darkMode ? "dark bg-black" : "light bg-transparent"}`}>
         <section
           id="hero"
-          className="w-[95%] h-[600px] bg-cover bg-center m-auto flex flex-col justify-center rounded-xl items-start lg:px-28 px-10 gap-7 z-20"
+          className="w-[95%] h-[600px] bg-cover bg-center m-auto flex flex-col justify-center rounded-xl items-start lg:px-28 px-10 gap-7 z-30 dark:bg-black"
           style={{ backgroundImage: `url(${heroimg})` }}
         >
           <h1
@@ -40,13 +40,13 @@ const Hero = () => {
 
       {/* form starts here */}
 
-      <div className={`${darkMode ? "dark bg-black" : "light bg-transparent"}`}>
+      <div className={`${darkMode ? "dark bg-transparent" : "light bg-transparent"}`}>
         <div
           data-aos="zoom-in"
           id="form"
           className={`${
             darkMode ? "dark bg-gray-800" : "light bg-white"
-          } lg:w-[70%] w-full grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-7 p-8 rounded-xl lg:m-auto lg:-mt-14 -mt-14`}
+          } lg:w-[70%] w-full grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-7 p-8 rounded-xl lg:m-auto lg:-mt-14 -mt-14 z-40`}
         >
           <div className="w-full">
             <h1 className="text-black font-semibold dark:text-white uppercase">
@@ -54,8 +54,8 @@ const Hero = () => {
             </h1>
             <input
               type="text"
-              placeholder="Enter an addrress, state, city and pincode"
-              className="bg-white p-2 w-full border-b-[1px] mt-2 border-[#c9c7c1]"
+              placeholder="Enter an addrress"
+              className="rounded-md p-2 w-full border-b-[1px] mt-2 border-[#c9c7c1]"
             />
           </div>
           <div className="w-full">
@@ -65,7 +65,7 @@ const Hero = () => {
             <select
               name="selectOption"
               id="selectOption"
-              className="bg-white p-2 w-full border-b-[1px] mt-2 border-[#c9c7c1] text-gray-500 text-md"
+              className="rounded-md bg-white p-2 w-full border-b-[1px] mt-2 border-[#c9c7c1] text-gray-500 text-md"
             >
               <option value="" disabled selected>
                 Select Property
@@ -83,7 +83,7 @@ const Hero = () => {
             <select
               name="selectOption"
               id="selectOption"
-              className="bg-white p-2 w-full border-b-[1px] mt-2 border-[#c9c7c1] text-gray-500 text-md"
+              className="rounded-md bg-white p-2 w-full border-b-[1px] mt-2 border-[#c9c7c1] text-gray-500 text-md"
             >
               <option value="" disabled selected>
                 Property Category
@@ -103,7 +103,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

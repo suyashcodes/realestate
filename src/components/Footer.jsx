@@ -103,7 +103,7 @@ const Footer = () => {
       {/* slide to top button */}
 
       <div className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed lg:bottom-12 bottom-6 right-6'>
-      <Link to='hero' spy={true} offset={-100} smooth={true}>
+      <Link to='hero' spy={true} offset={-120} smooth={true}>
         <FaArrowUp className='size-6 text-white'/>
       </Link>
 
